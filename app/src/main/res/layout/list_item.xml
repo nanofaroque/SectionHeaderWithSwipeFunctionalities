@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.daimajia.swipe.SwipeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/swipe_item"
+    android:layout_width="match_parent"
+    android:layout_height="80dp"
+    app:clickToClose="true">
+
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper"
+        android:layout_width="160dp"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:tag="Bottom1"
+        android:weightSum="1">
+
+        <ImageView
+            android:id="@+id/img_budget"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@mipmap/money" />
+
+        <ImageView
+            android:id="@+id/photo"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@mipmap/photo" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_wrapper_2"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@android:color/holo_red_dark"
+        android:tag="Bottom4">
+
+        <ImageView
+            android:id="@+id/edit"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@mipmap/pencil" />
+
+        <ImageView
+            android:id="@+id/check"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@mipmap/check" />
+
+        <ImageView
+            android:id="@+id/delete"
+            android:layout_width="70dp"
+            android:layout_height="match_parent"
+            android:paddingLeft="25dp"
+            android:paddingRight="25dp"
+            android:src="@mipmap/delete" />
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:scaleType="fitXY"
+            android:src="@mipmap/ic_launcher"/>
+        <TextView
+            android:id="@+id/name"
+            android:text="Md Omar Faroque"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="50dp"
+            android:layout_alignParentTop="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/cell"
+            android:text="001-872-***-****"
+            android:layout_toRightOf="@+id/avatar"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </RelativeLayout>
+</com.daimajia.swipe.SwipeLayout>
+
+
+
+
