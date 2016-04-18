@@ -4,15 +4,12 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import com.daimajia.swipe.SwipeLayout;
-
 /**
  * Created by omarfaroque on 4/17/16.
  */
 public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
     private static final int TYPE_HEADER = 0;
     private static final int TYPE_ITEM = 1;
-
-
 //for test help
 //http://stackoverflow.com/questions/11541114/unittesting-of-arrayadapter
 
@@ -46,7 +43,6 @@ public class MyAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
             ((ViewHolderListItem) holder).setTvName("Md Omar Farouqe");
             ((ViewHolderListItem) holder).setTvCell("001-872-123-4567");
             ((ViewHolderListItem) holder).setImgAvatar(R.mipmap.ic_launcher);
-
         } else if (holder instanceof ViewHolderHeader) {
            ((ViewHolderHeader) holder).setTvHeader("Header");
         }
